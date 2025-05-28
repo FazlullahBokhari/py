@@ -1,0 +1,10 @@
+C:\Users\fazlu\PycharmProjects\PythonProject\.venv\Scripts\python.exe C:\Users\fazlu\PycharmProjects\PythonProject\main.py
+part
+product
+warranty
+Generated SQL Query:
+SELECT warranty.price, part.category
+FROM product JOIN warranty ON product.serial_no = warranty.serial_no JOIN part ON product.part_id = part.id
+WHERE product.serial_no = :serial_no_1
+
+Process finished with exit code 0
